@@ -4,7 +4,7 @@
     {
     "src": "oespro/wsgi.py",
     "use": "@vercel/python",
-    "config": { "memory": "1024", "runtime": "python3.10.7" }
+    "config": { "maxLambdaSize": "100mb", "runtime": "python3.10.7" }
     },
     {
     "src": "build_files.sh",
