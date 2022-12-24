@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <title>Exam</title>
+    </head>
+      <style media="screen">
+      .form-select{
+        width: 290px;
+        margin-top: -7px;
+      }
+      input[name]{
+      margin-top: -7px;
+      }
+      h5{
+        border-bottom: 2px solid orange;
+      }
+      </style>
+      {% include 'candidate/navbar.html' %}
+    <body class="bg-dark">
+      <br><br>
+      <div class="card shadow m-5">
+      <div class="card-body">
+        <center><h2>Edit Your Profile</h2></center>
+<div class="container-fluid">
+<form method="POST" enctype="multipart/form-data">
+  {% csrf_token %}
+  <h5>Personal Details</h5>
+  <div class="form-row">
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label >Full Name</label>
+              <input type="text" name="fullname" value="{{data.user.first_name}}" placeholder="Enter Full Name"  class="form-control">
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Father's Name</label>
+              <input type="text" name="fname" value="{{data.Fathers_Name}}" placeholder="Enter Father's Name"  class="form-control">
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Mother's Name</label>
+              <input type="text" name="mname" value="{{data.Mothers_Name}}" placeholder="Enter Mother's Name"  class="form-control">
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Date of Birth</label>
+              <input type="date" name="dob" value="{{data.Date_of_Birth}}" placeholder="Enter Date of Birth" required class="form-control">
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Gender</label>
+              <br>
+              <select class="form-select py-2" name="gender" value="{{data.Gender}}" aria-label="Default select example" class="form-control">
+              <option selected>select</option>
+              <option>Male</option>
+              <option>Female</option>
+              <option>Transgender</option>
+             </select>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>ID PROOF</label>
+              <br>
+              <select class="form-select py-2" name="idproof" value="{{data.ID_PROOF}}" aria-label="Default select example">
+              <option selected>select</option>
+              <option>Aadhaar Card</option>
+              <option>Pan Card</option>
+              <option>Driving License</option>
+             </select>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>ID NO</label>
+              <input type="text" name="idno" value="{{data.ID_NO}}" placeholder="Enter ID No." class="form-control">
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Change Passport Size Photo</label>
+              <input type="file" name="upsp" value="{{data.Upload_Passport_Size_Photo}}" class="form-control">
+          </div>
+      </div>
+</div>
+
+      <h5>Contact Details</h5>
+      <div class="form-row">
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label >Contact No.</label>
+              <input type="number" name="cno" value="{{data.Contact_No}}" placeholder="Enter Contact No."  class="form-control" >
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Email Id</label>
+              <input type="email" name="emailid" value="{{data.Email_Id}}" placeholder="Enter Email Id"  class="form-control">
+          </div>
+      </div>
+ </div>
+
+      <h5>Educational Qualifications</h5>
+      <div class="form-row">
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Educational Degree</label>
+              <br>
+              <select class="form-select py-2" name="edegree" value="{{data.Educational_Degree}}" aria-label="Default select example ">
+              <option selected>select</option>
+              <option>Xth</option>
+              <option>XIIth</option>
+              <option>Graduate</option>
+              <option>Post Graduate</option>
+              <option>Master's Degree</option>
+              <option>Others</option>
+              </select>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>If Other, Please Specify</label>
+              <input type="text" name="other1" value="{{data.If_Other1_Please_Specify}}" class="form-control">
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Current Qualification</label>
+              <br>
+              <select class="form-select py-2" name="cqlfn" value="{{data.Current_Qualification}}" aria-label="Default select example ">
+                <option selected>select</option>
+                <option>Mtech</option>
+                <option>Mphil.</option>
+                <option>MBA</option>
+                <option>MCA</option>
+                <option>MSc</option>
+                <option>MCom</option>
+                <option>MEd</option>
+                <option>MA</option>
+                <option>BEd</option>
+                <option>BTech</option>
+                <option>BSc</option>
+                <option>BCom</option>
+                <option>BA</option>
+                <option>Others</option>
+              </select>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>If Other, Please Specify</label>
+              <input type="text" name="other2" value="{{data.If_Other2_Please_Specify}}" class="form-control">
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Stream</label>
+              <br>
+              <select class="form-select py-2" name="stream" value="{{data.Stream}}" aria-label="Default select example ">
+              <option selected>select</option>
+              <option>Arts</option>
+              <option>Aeronatical Engineering</option>
+              <option>Automobile Engineering</option>
+              <option>Civil Engineering</option>
+              <option>Commerce</option>
+              <option>Electrical Engineering</option>
+              <option>IT</option>
+              <option>Mechanical Engineering</option>
+              <option>Science</option>
+              <option>Others</option>
+              </select>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>If Other, Please Specify</label>
+              <input type="text" name="other3" value="{{data.If_Other3_Please_Specify}}" class="form-control">
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Honours</label>
+              <br>
+              <select class="form-select py-2" name="honours" value="{{data.Honours}}" aria-label="Default select example ">
+              <option selected>select</option>
+              <option>Accounting</option>
+              <option>Biology</option>
+              <option>Chemistry</option>
+              <option>Computer Science</option>
+              <option>English</option>
+              <option>Mathematics</option>
+              <option>Microbiology</option>
+              <option>Odia</option>
+              <option>Geology</option>
+              <option>Geography</option>
+              <option>Libray Science</option>
+              <option>Hindi</option>
+              <option>History</option>
+              <option>Sanskrit</option>
+              <option>Others</option>
+              </select>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>If Other, Please Specify</label>
+              <input type="text" name="other4" value="{{data.If_Other4_Please_Specify}}" class="form-control">
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>School/College Name</label>
+              <input type="text" name="sclcname" value="{{data.School_Name_or_College_Name}}" class="form-control" >
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>Board</label>
+              <br>
+              <select class="form-select py-2" name="board" value="{{data.Board}}" aria-label="Default select example ">
+              <option selected>select</option>
+              <optio>BSE</option>
+              <option>CHSE</option>
+              <option>CBSE</option>
+              <option>ICSE</option>
+            </select>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="form-group">
+              <label>University Name</label>
+              <input type="text" name="uname" value="{{data.University_Name}}" class="form-control" >
+          </div>
+      </div>
+ </div>
+
+  <input type="submit" value="Update Profile" class="m-2 px-3 btn btn-success">
+  </form>
+</div>
+</div>
+</body>
+</html>

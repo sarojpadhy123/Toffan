@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    * {
+        /* Reset browser's padding and margin */
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        margin: 100px;
+      }
+      .my-button {
+        width: 200px;
+        height: 200px;
+        border: none;
+        border-radius: 100px;
+        outline: none;
+        background: #ab2525;
+        color: white;
+        cursor: pointer;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+        font-size: 30px;
+        font-family: serif;
+      }
+      .my-button:hover {
+        background: #eb2f06;
+      }
+      .col-md-6{
+        padding-left: 258px!important;
+        padding-right: 26px!important;
+      }
+      .col-md-5{
+        padding-right: 26px!important;
+        padding-left: 139px!important;
+      }
+      .row{
+        float: right!important;
+        margin-top: 402px!important;
+      }
+      body{
+        background-image: url("static/image/admit.jpeg");
+        background-size: cover;
+      }
+</style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<body class="bg-dark">
+{% include 'admin/esectionnavbar.html' %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6" >
+      <a href="admitcard_list"><button class="my-button">Candidate List</button></a>
+    </div>
+    <div class="col-md-5">
+       <a href="admitcard_sent"><button class="my-button">Admit Card Generate</button></a>
+    </div>
+  </div>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>

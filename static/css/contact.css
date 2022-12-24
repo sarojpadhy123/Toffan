@@ -1,0 +1,77 @@
+/*
+Template Name:Teacher
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+/*********************contact****************/
+#contact{
+   padding-top:35px;
+   padding-bottom:40px;
+   background:#fc0;
+   }
+.contact_inner h1 i{
+    background:#fff;
+	width:120px;
+	height:120px;
+	border-radius:100%;
+	color:#000;
+	font-size:60px;
+	line-height:120px;
+	}
+.contact_inner h2{
+	text-transform:uppercase;
+	}
+.contact_inner p a{
+  color:#000;
+	}
+.contact_inner p a:hover{
+ color:#333;
+	}
+.contact_inner  span{
+ color:#000;
+ display:block;
+ margin-top:10px;
+ font-size:18px; 
+  }
+.contact_inner  span i{
+vertical-align:middle;
+font-size:30px;
+margin-right:3px;
+  }
+.contact_inner  .span_2 i{
+color:#000;
+  }
+  
+#contact_us{
+ padding-top:40px;
+ padding-bottom:40px;
+   }
+.contact_us_1r .form-control{
+  margin-top:15px;
+  }
+.contact_us_1r .form_1{
+  height:150px;
+  }
+/*********************contact_end****************/
+
+@media screen and (max-width : 767px){
+.contact_us_1r {
+ text-align:center;
+ }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+ }
+ @media (min-width:992px) and (max-width:1200px) {
+
+ }
+@media (min-width:1201px) and (max-width:1310px) {
+
+ }
+
+
+

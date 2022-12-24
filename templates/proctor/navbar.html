@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+.dropbtn {
+  background-color:#2924210f;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap'); */
+</style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+  <!-- <br><br> -->
+    <body>
+      <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-primary">
+        <a href="proctorbase"><i class="fa fa-home text-dark" style="font-size:36px"></i></a>
+          <a style="color:white;" class="navbar-brand"><i class=""></i>&nbsp;<font face = "Comic sans MS" size ="4">{{request.user.first_name}}</font></a>
+            <div class="navbar-collapse text-center">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item " style="margin-right: 100px;">
+                        <div class="dropdown">
+                          <button onclick="myFunction()" class="dropbtn"><i class="fa fa-user-circle-o" style="font-size:24px"></i></button>
+                          <div id="myDropdown" class="dropdown-content">
+                            <a href="profile_proctor"><i class="fa fa-eye" style="font-size:24px; margin-right: 23px;"></i>Profile</a>
+                            <a href="logout"><i class="fa fa-power-off" style="font-size:24px; margin-right: 10px;"></i>Log Out</a>
+                          </div>
+                        </div>
+                   </li>
+              </ul>
+           </div>
+       </nav>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content-fa fa-user-cicrle-o");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+  </body>
+</html>

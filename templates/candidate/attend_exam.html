@@ -1,0 +1,49 @@
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Attend Exam</title>
+  </head>
+  {% include 'candidate/navbar.html' %}
+  <br><br><br>
+  <body class="bg-dark">
+             <div class="card shadow m-5">
+             <div class="card-body" >
+             <div class="card card-1">
+                 <div class="card-heading">
+                     <center><h2 class="title">Examination in Online-User Login</h2></center>
+                 </div>
+                 <div class="card-body">
+                     <form method="POST">
+                         {% csrf_token %}
+                         <div class="row">
+                         <div class="col-md-4">
+                            <img src="{% static 'image/xm.png' %}" style="height:100%;width:105%;">
+                         </div>
+                         <div class="col-md-8">
+                                <label>Roll No.</label>
+                              <input type="text" name="regdno" placeholder="Enter Roll No." class="form-control">
+                              <label>Date of Birth</label>
+                            <input type="date" name="dob" class="form-control">
+                            <label>Password</label>
+                          <input type="password" name="pwd" class="form-control">
+                          <br><br>
+                        <div style="margin-top: -30px;">
+                        <a href="startexam"><input type="url" value="Submit" class="btn btn-success"></a>
+                              <!--<button class="btn btn--radius-2 btn-success btn-block" type="submit">Login</button>-->
+                          </div>
+                            </div>
+                         </div>
+                     </form>
+                     <br>
+                     <!--<p style="text-align: center;">Don't have an account? <a style="text-decoration: none;" href="/donor/donorsignup">Register Now</a></p>-->
+                 </div>
+             </div>
+         </div>
+     </div>
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+ </body>
+</html>

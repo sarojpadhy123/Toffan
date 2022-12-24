@@ -1,0 +1,508 @@
+{% extends 'navbar.html' %}
+{% block content %}
+<html>
+
+	<link href="static/css/index.css" rel="stylesheet">
+
+<style media="screen">
+/********************************/
+body{
+  font-family: sans-serif;
+}
+img{
+ margin-top: 10px;
+  }
+#book
+{
+  margin-top: -11px;
+}
+
+.goal_1_l h2{
+  width:108%;
+}
+/*          Hero Headers        */
+/********************************/
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 0 rgba(0,0,0,.75);
+    -webkit-transform: translate3d(-50%,-50%,0);
+    -moz-transform: translate3d(-50%,-50%,0);
+    -ms-transform: translate3d(-50%,-50%,0);
+    -o-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+    width:100%;
+    text-align:left;
+    padding-left:100px;
+    padding-right:100px;
+    padding-top:113px;
+}
+.hero h1 {
+  color:#000;
+  font-size:50px;
+  margin-top:0;
+}
+.hero h1 span{
+ color: #00c5b5;
+ }
+.hero p{
+ color: #000;
+ }
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s;
+        -ms-transition: 2s all ease-in-out .1s;
+         -o-transition: 2s all ease-in-out .1s;
+            transition: 2s all ease-in-out .1s;
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s;
+        -ms-transition: 2s all ease-in-out .1s;
+         -o-transition: 2s all ease-in-out .1s;
+            transition: 2s all ease-in-out .1s;
+}
+
+/*       Slides backgrounds     */
+/********************************/
+.fade-carousel .slides .slide-1,
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 90vh;
+  background-size: cover;
+  background-position: revert;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+    background-image: url("static/image/t1.jpg");
+}
+.fade-carousel .slides .slide-2 {
+    background-image: url("static/image/t3.jpg");
+}
+.fade-carousel .slides .slide-3 {
+    background-image: url("static/image/t5.jpg");
+}
+.hero_i ul{
+ margin-top:0;
+ margin-top:200px;
+   }
+.hero_i ul li{
+ color:#fff;
+ margin-bottom:5px;
+ }
+.big{
+ font-size:28px;
+ color:#00c5b5!important;
+  }
+.carousel-indicators{
+  bottom:0;
+  left:11%;
+   }
+
+.hero_im{
+ position:relative;
+  }
+.hero_im_2{
+  position:absolute;
+  bottom:11%;
+  width:100%;
+  text-align:center;
+  background:#ffcc00b8;
+  padding:5px 15px 25px 15px;
+  }
+/*********************center_home_end****************/
+
+/*********************achievements****************/
+#achievements{
+  padding-top:30px;
+  padding-bottom:40px;
+  background:#fc0;
+  }
+.achiev_1 h2{
+  width:30%;
+   }
+.achiev_1 span{
+  display:block;
+  margin-top:10px;
+  font-size:26px;
+  }
+.achiev_2i span i{
+background:#000;
+border-radius:50%;
+width:150px;
+height:150px;
+color:#fff;
+line-height:140px;
+font-size:60px;
+border:3px solid #fff;
+}
+.achiev_2{
+ margin-top:30px;
+   }
+.achiev_2i .bg_1 i{
+  background:#fff;
+  color:#000;
+  border:3px solid #000;
+  }
+/*********************achievements_end****************/
+
+/*********************skill_home****************/
+#skill_home{
+padding-top:30px;
+padding-bottom:40px;
+  }
+.skill_home_1l h3{
+  width: 85%;
+   }
+.skill_home_1l ul li{
+padding-left:5px;
+padding-right:5px;
+  }
+.skill_home_1r{
+background:#fc0;
+padding:10px 15px 20px 15px;
+border-radius:15px 30px;
+  }
+.skill_home_1r p{
+ margin-top:15px;
+   }
+.skill_home_1r p i{
+ margin-right:5px;
+ background:#fff;
+ text-align:center;
+ width:40px;
+ height:40px;
+ line-height:40px;
+ border-radius:50%;
+  }
+.skill_home_1r .para_1:before {
+    display: inline-block;
+    width: 15%;
+    height: 2px;
+    background-color: #000;
+    vertical-align: middle;
+    margin-right: 2%;
+    content: "";
+}
+/*********************skill_home_end****************/
+
+</style>
+<body>
+
+<section id="center" class="center_home clearfix" >
+ <div class="carousel fade-carousel slide" data-ride="carousel" data-interval="4000" id="bs-carousel" style="margin-top: 52px;">
+
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#bs-carousel" data-slide-to="1" class=""></li>
+    <li data-target="#bs-carousel" data-slide-to="2" class=""></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item slides active">
+      <div class="slide-1"></div>
+      <div class="hero">
+	   <!--<div class="col-sm-2">
+	    <div class="hero_i clearfix">
+		  	<ul>
+			 <li class="big">1. About me</li>
+			 <li>2. Bio</li>
+			 <li>3. Skills</li>
+			</ul>
+		</div>
+	   </div>-->
+
+	   <div class="col-sm-10">
+	   <div class="hero_i clearfix">
+		 <div class="hero_im clearfix">
+  	  <div class="hero_im_1 clearfix">
+  	  <!--<img src="static/image/t1.jpg" class="iw" alt="abc">---->
+  	  </div>
+		  <!--<div class="hero_im_2 clearfix">
+			 <h1><span>I'm</span> Praesent Libero</h1>
+			 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			 <h4><a class="button" href="#">Learn More</a></h4>
+		  </div>-->
+		 </div>
+		</div>
+	  </div>
+    </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-2"></div>
+      <div class="hero">
+	   <!--<div class="col-sm-2">
+	    <div class="hero_i clearfix">
+		  	<ul>
+			 <li>1. About me</li>
+			 <li class="big">2. Bio</li>
+			 <li>3. Skills</li>
+			</ul>
+		</div>
+	   </div>-->
+
+	   <div class="col-sm-10">
+	    <div class="hero_i clearfix">
+		 <div class="hero_im clearfix">
+		  <div class="hero_im_1 clearfix">
+		   <!--<img src="img/t1.jpg" class="iw" salt="abc">-->
+		  </div>
+		 <!---<div class="hero_im_2 clearfix">
+			 <h1><span>I'm</span> Nibh Elementum</h1>
+			 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			 <h4><a class="button" href="#">Learn More</a></h4>
+		  </div>-->
+		 </div>
+		</div>
+	   </div>
+      </div>
+    </div>
+    <div class="item slides">
+      <div class="slide-3"></div>
+      <div class="hero">
+	   <!--<div class="col-sm-2">
+	    <div class="hero_i clearfix">
+		  	<ul>
+			 <li>1. About me</li>
+			 <li>2. Bio</li>
+			 <li class="big">3. Skills</li>
+			</ul>
+		</div>
+	   </div>---->
+	   <div class="col-sm-10">
+	    <div class="hero_i clearfix">
+		 <div class="hero_im clearfix">
+		  <div class="hero_im_1 clearfix">
+		   <!--<img src="img/exam.jpg" class="iw" style="height: 200%;width:150%;" alt="abc">--->
+		  </div>
+		  <!--<div class="hero_im_2 clearfix">
+			 <h1><span>I'm</span> Dapibus Diam</h1>
+			 <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+			 <h4><a class="button" href="#">Learn More</a></h4>
+		  </div>--->
+		 </div>
+		</div>
+	   </div>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<br>
+
+<div class="container-fluid">
+	<div class="row">
+			<div class="col-md-3">
+				<div id="templatemo_sidebar">
+				<div class="sidebar_box border-none default-list">
+					<h2>Notice</h2>
+				<ul style="list-style-type:disc">
+						<li><a href="#">The Computer Exam will be held on dt: 25/11/2022</a></li>
+						<li><a href="#">Advisory to the Candidates Unit Test - 2022</a></li>
+						<li><a href="#">PUBLIC NOTICE are announce very soon regarding Competition Exam</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+<div class="col-md-9">
+<section id="goal" class="clearfix">
+   <div class="goal_1 clearfix">
+    <div class="col-sm-5">
+	 <div class="goal_1_l clearfix">
+	  <h2>We Reach Our Goals</h2>
+	  <h3 class="bold">We Have the Best Portfolios</h3>
+	  <h4></h4>
+	  <p>An examination portfolio contains a collection of student achievements that the student completes to demonstrate the intended learning outcomes of a course. The content of the portfolio may vary in terms of content, work process and the students' influence in the selection.</p>
+	  <br><br>
+	  <p>The construction period defines the data set used to create and construct your portfolio recommendations using solver.</p>
+
+	 </div>
+	</div>
+	<div class="col-sm-7">
+	 <div class="goal_1_r text-center clearfix">
+	  <h3><i class="fa fa-leaf"></i> Top Ranked Students are from here <i class="fa fa-leaf"></i></h3>
+	  <p>Fusce nec tellus sed augue semper porta Mauris massa</p>
+	  <div class="goal_1_ri clearfix">
+	   <div class="col-sm-6">
+	    <div class="goal_1_rii clearfix">
+		  <img src="static/image/xm.jpg" alt="abc" class="iw">
+		  <h4>Samprak Biswal</h4>
+		  <h5>2nd RANK</h5>
+		</div>
+	   </div>
+	   <div class="col-sm-6">
+	    <div class="goal_1_rii clearfix">
+		  <img src="static/image/xm2.jpg" alt="abc">
+		  <h4>Manjit Sahoo</h4>
+		  <h5>4th RANK</h5>
+		</div>
+	   </div>
+	  </div>
+	</div>
+	</div>
+	</div>
+	</div>
+</section>
+</div>
+</div>
+
+<section id="instructor">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="instr_1 clearfix">
+    <div class="col-md-6">
+	 <div class="instr_1l clearfix">
+	  <h3 class="h_bg_1">Our Coordinator</h3>
+	  <img src="static/image/exam3.png" alt="abc" class="iw thumbnail">
+	 </div>
+	</div>
+	<div class="col-md-6">
+	 <div class="instr_1r clearfix">
+	  <h1>Online Exam </h1>
+	  <h3>Principles</h3>
+    <p>As courses have moved online this spring, many of us need to consider how to have our students take exams online. <br>
+      In many cases, this involves learning how to use tools that help ensure students take the exam with only the resources you want them to have.</p>
+      <br><br>
+    <ul>
+     <li><i class="fa fa-circle"></i> Focus on learning. ...</li>
+     <li><i class="fa fa-circle"></i> Balance structure with flexibility. ...</li>
+     <li><i class="fa fa-circle"></i> Provide clear instructions and quality feedback. ...</li>
+     <li><i class="fa fa-circle"></i> When possible, replace timed exams with other types of assessments. ...</li>
+     <li><i class="fa fa-circle"></i> Emphasize academic integrity.</li>
+    </ul>
+    </div>
+	  </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section class="bg-primary medium-padding120 text-white" >
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 ">
+				<div>
+					<img src="static/image/home.png" alt="" style="max-width: 100%; height:auto; display:inline-block; border-style: none;">
+				</div>
+			</div>
+			<div class="col-lg-6 " style="text-align:justify">
+				<div class="crumina-module crumina-heading custom-color c-white">
+					<br><br>
+				<h2 class="heading-title">What is Online Examination?</h2>
+				<div class="heading-text">
+					Online examination system is a web-based examination system where examinations are given online,
+					 either through the internet or intranet using computer system. The main goal of this online examination
+					 system is to effectively evaluate the student thoroughly through a totally automated system that not only
+					  reduce the required time but also obtain fast and accurate results.
+				</div>
+			</div>
+		</div>
+		</div>
+	</div>
+</section>
+
+<section id="services_top">
+	<div class="container">
+	 <div class="row">
+	  <div class="services_top_1 clearfix">
+	   <div class="col-sm-6">
+		<div class="services_top_1i clearfix">
+		  <h3 class="bold">We expect a bright future</h3>
+		  <p>
+The constant evolution of technology in the digital world has caused a wave of consolidation in the assessment industry, making pen and paper tests redundant. <br><br>
+The growth of the online industry at a fast pace and obsoleteness of traditional evaluation techniques is making people lose confidence in the current pen-paper examinations.</p>
+		  <h4 class="bold">Our Goal</h4>
+		  <ul>
+		   <li><i class="fa fa-circle"></i> To test the subject knowledge of the students</li>
+		   <li><i class="fa fa-circle"></i> Reports and performance analysis</li>
+		   <li><i class="fa fa-circle"></i> Automatically Checked Answers</li>
+		  </ul>
+		</div>
+	   </div>
+	   <div class="col-sm-6">
+		<div class="services_top_1i clearfix">
+		  <img src="static/image/foes.jpg" style="height: 300px;width:380px;">
+		</div>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+   </section>
+
+   <section id="skill_home">
+	<div class="container-fluid">
+	 <div class="row">
+	  <div class="skill_home_1 clearfix">
+	   <div class="col-sm-6">
+		<div class="skill_home_1l clearfix">
+		 <h3 class="h_bg_1">Advantages of online examination system </h3>
+     <ul>
+      <li><i class="fa fa-circle"></i> Reduced burden of administration</li>
+      <li><i class="fa fa-circle"></i> Eases examination-related requirements</li>
+      <li><i class="fa fa-circle"></i> Scalable worldwide reach</li>
+      <li><i class="fa fa-circle"></i> Easy-to-use</li>
+      <li><i class="fa fa-circle"></i> Trends in Teaching and Assessment</li>
+      <li><i class="fa fa-circle"></i> Quick Turnaround Time</li>
+     </ul>
+		</div>
+	   </div>
+	   <div class="col-sm-6">
+		<div class="skill_home_1r text-center clearfix">
+		 <p class="bold"><i class="fa fa-book"></i> Eases examination-related requirements</p>
+		 <p class="bold"><i class="fa fa-copy"></i>  Trends in Teaching and Assessment</p>
+		 <p class="bold"><i class="fa fa-pencil"></i> Scalable worldwide reach</p>
+		 <p class="bold"><i class="fa fa-graduation-cap"></i> Trends in Teaching and Assessment</p>
+		 <p class="bold"><i class="fa fa-inbox"></i> Easy-to-use</p>
+		</div>
+	   </div>
+	  </div>
+	 </div>
+	</div>
+   </section>
+
+<section id="example_h">
+ <div class="container-fluid">
+  <div class="row">
+   <div class="example_h_1 clearfix">
+	 <div class="col-sm-3">
+	  <div class="example_h_1r clearfix">
+	   <img src="static/image/oe3.jpg" class="iw mgt" alt="abc">
+	  </div>
+	 </div>
+	 <div class="col-sm-3">
+	  <div class="example_h_1l clearfix">
+	   <h4 class="bold">Our Example</h4>
+	   <p> The growth of the online industry at a fast pace and obsoleteness of traditional evaluation techniques is making people lose confidence in the current pen-paper examinations.</p>
+	   <h5><a class="button" href="#">Learn More</a></h5>
+	  </div>
+	 </div>
+	 <div class="col-sm-3">
+	  <div class="example_h_1r clearfix">
+	   <img src="static/image/oe5.jpg" class="iw mgt" alt="abc">
+	  </div>
+	 </div>
+	 <div class="col-sm-3">
+	  <div class="example_h_1l clearfix">
+	   <h4 class="bold">Our Example</h4>
+	   <p> Outlines knowledge and skills that the industry has deemed important for candidates to be successful on the job.</p>
+	   <h5><a class="button" style="margin-top: 60px"href="#">Learn More</a></h5>
+	  </div>
+	 </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+</body>
+</html>
+{% endblock content %}

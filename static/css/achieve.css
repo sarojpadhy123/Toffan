@@ -1,0 +1,106 @@
+/*
+Template Name:Teacher
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+/*********************achieve_page****************/
+#achieve_page{
+ padding-top:30px;
+ padding-bottom:40px;
+  }
+.achieve_page_1l1l h3{
+  color:#fc0;
+  }
+.achieve_page_1l1l h3 span{
+  display:block;
+  font-size:18px;
+  color:#000;
+  }
+.achieve_page_1l1{
+margin-top:10px;
+border-bottom:2px dashed #ddd;
+padding-bottom:20px;
+  }
+
+
+/*********************achieve_page_end****************/
+
+/*********************testimonial_home****************/
+#testimonial_home{
+  padding-top:30px;
+  padding-bottom:40px;
+  background: #fc0;
+   }
+.testimonial_h_1 .h_bg{
+  width: 30%;
+  }
+.testimonial_h_3{
+width:60%;
+text-align:center;
+font-style:italic;
+   }
+.goal_1_rii{
+ background:#fff;
+ padding:0px 10px 10px 10px;
+ border-radius:5px;
+ margin-top:20px;
+  }
+/*********************testimonial_home_end****************/
+
+/*********************example_h****************/
+#example_h{
+  padding-top:40px;
+  padding-bottom:40px;
+  background:#fc0;
+  }
+.example_h_1l{
+  background:#fff;
+  padding:20px 15px 0px 15px;
+  min-height:300px;
+  }
+.example_h_1lo{
+  background:#000;
+  }
+.example_h_1lo h4{
+  color:#fff;
+   }
+.example_h_1lo p{
+  color:#fff;
+   }
+/*********************example_h_end****************/
+
+
+
+@media screen and (max-width : 767px){
+#achieve_page{
+ text-align:center;
+  }
+.achieve_page_1l1l h3 span{
+  display:inline;
+  }
+.skill_page_2ii {
+ margin-top:10px;
+  }
+#example_h{
+  text-align:center;
+   }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.example_h_1l .button{
+   padding:10px 20px;
+   font-size:16px;
+  }
+.example_h_1l p{
+   font-size:14px;
+  }
+ }
+ @media (min-width:992px) and (max-width:1200px) {
+
+ }
+@media (min-width:1201px) and (max-width:1310px) {
+
+ }

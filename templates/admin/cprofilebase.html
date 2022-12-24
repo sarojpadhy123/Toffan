@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+  * {
+      /* Reset browser's padding and margin */
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      margin: 100px;
+    }
+    .my-button {
+      width: 200px;
+      height: 200px;
+      border: none;
+      border-radius: 100px;
+      outline: none;
+      background: #ab2525;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+      font-size: 30px;
+      font-family: serif;
+    }
+    .my-button:hover {
+      background: #eb2f06;
+    }
+    body{
+      background-image: url("static/image/cpl.png");
+      background-size: cover;
+    }
+</style>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<body class="bg-dark">
+{% include 'admin/csectionnavbar.html' %}
+<br><br>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<div class="container-fluid">
+  <div class="row" style="margin-top: 150px;">
+    <div class="col-md-3">
+      <!--<img src="static/image/proctor.jpg">-->
+      <a href="pendingexisting_candidatelist"><button class="my-button">Pending Existing List</button></a>
+     <!--<a href="addquestions"><button class="my-button">Add Questions</button></a>-->
+    </div>
+    <div class="col-md-8" style="text-align: end; margin-left: 60px;">
+       <a href="pendingnew_candidatelist"><button class="my-button">Pending New List</button></a>
+    </div>
+  </div>
+</div>
+<!--<div class="wrapper">
+    <div class="sidenav">
+      <br><br>
+  <a href="proctorsection_dashboard">Dashboard</a>
+  <button class="dropdown-btn">Profile
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="pendingexisting_proctorlist">Pending Existing List</a>
+    <a href="pendingnew_proctorlist">Pending New List</a>
+  </div>
+  <button class="dropdown-btn">Approved Proctor Details
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a href="qualified_proctorlist">Qualified</a>
+    <a href="rejected_proctorlist">Rejected</a>
+  </div>
+  <button class="dropdown-btn">Question Bank
+    <i class="fa fa-caret-down"></i>
+  </button>-->
+  <!--<a href="viewcourse_questions">Course</a>-->
+<!--  <div class="dropdown-container">
+    <a href="orderquestions_to_proctor">Order Questions</a>
+    <a href="viewcourse_questions">Available</a>
+    <a href=""></a>
+  </div>-->
+    <!--<button class="dropdown-btn">Notification Details
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-container">
+      <a href="">View</a>
+  </div>-->
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<!--<script>
+  /* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+  var dropdown = document.getElementsByClassName("dropdown-btn");
+  var i;
+  for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+    dropdownContent.style.display = "none";
+  } else {
+    dropdownContent.style.display = "block";
+  }
+  });
+  }
+</script>----->
+</body>
+</html>

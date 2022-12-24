@@ -1,0 +1,91 @@
+/*
+Template Name:Teacher
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+/*********************team_top****************/
+#team_top{
+ padding-top:30px;
+ padding-bottom:40px; 
+  }
+.team_top_1 .h_bg_1{
+ width:30%;
+  }
+.team_top_2l a{
+ background:#000; 
+  }
+.team_top_2{
+ width:80%;
+ margin-left:auto;
+ margin-right:auto;
+ margin-top:20px; 
+  }
+#example_h{
+background:#fc0;
+padding-top:40px;
+padding-bottom:40px;  
+  }
+.example_h_1l{
+ background:#fff;
+ text-align:center;
+ padding:20px 15px 25px 15px; 
+  }
+.example_h_1l span i{
+  font-size:40px;
+  }
+.example_h_1l hr{
+ background:#fff;
+ width:10%;
+ border-width:3px;
+ border-color:#fc0;
+  }
+  
+.example_h_1l1{
+ background:#000;
+ text-align:center;
+ padding:20px 15px 25px 15px; 
+  }
+.example_h_1l1 span i{
+  font-size:40px;
+  color:#fff;
+  }
+.example_h_1l1 hr{
+ background:#fff;
+ width:10%;
+ border-width:3px;
+ border-color:#fc0;
+  }
+.example_h_1l1 h4{
+color:#fff;  
+  }
+ .example_h_1l1 h5{
+color:#fff;  
+  }
+  
+.team_top_2n img{
+ border-radius:10px 30px; 
+  } 
+.team_top_b{
+ margin-top:20px;  
+   }
+/*********************team_top_end****************/
+
+
+@media screen and (max-width : 767px){
+
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+ }
+ @media (min-width:992px) and (max-width:1200px) {
+
+ }
+@media (min-width:1201px) and (max-width:1310px) {
+
+ }
+
+
+

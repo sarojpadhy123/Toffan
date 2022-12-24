@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Online Examination System</title>
+  	<link href="static/css/bootstrap.min.css" rel="stylesheet">
+  	<link href="static/css/global.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="static/css/font-awesome.min.css" />
+  	<link href="https://fonts.googleapis.com/css?family=Amaranth&display=swap" rel="stylesheet">
+  	<script src="static/js/jquery-2.1.1.min.js"></script>
+    <script src="static/js/bootstrap.min.js"></script>
+    </head>
+  <style media="screen">
+  body{
+    font-family: sans-serif;
+  }
+  img{
+   margin-top: 10px;
+    }
+  #book
+  {
+    margin-top: -11px;
+  }
+
+  </style>
+  <body>
+
+<section id="header" class="clearfix">
+	<nav class="navbar navbar-fixed-top" style="background: #111;">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index"><img src="static/image/book.jpg" id="book"> Online Examination</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="tag_m" href="index">Home</a>
+                    </li>
+
+                    <li>
+                        <a class="tag_m" href="about">About Us</a>
+                    </li>
+
+					          <li>
+                        <a class="tag_m" href="proctor">Proctor</a>
+                    </li>
+
+					          <li>
+                        <a class="tag_m" href="candidate">Candidate</a>
+                    </li>
+
+                    <li>
+                      <a class="tag_m" href="admin_login">Admin Login</a>
+                  </li>
+
+                    <li>
+            					<div class="dropdown">
+            						<button class="dropbtn tag_m">Sub Admin Login</button>
+            						<div class="dropdown-content">
+            						  <a href="ProctorSection_login">Proctor Section</a>
+            						  <a href="CandidateSection_login">Candidate Section</a>
+            						  <a href="ExamSection_login">Exam Section</a>
+            						  <a href="ResultSection_login">Result Section</a>
+            						</div>
+            					</div>
+            				</li>
+
+					        <!--<li>
+                    <a class="tag_m" href="contact">Contact Us</a>
+                  </li>--->
+
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+</section>
+
+<div class="main-content">
+  {% block content %}
+  {% endblock content %}
+</div>
+
+<section id="footer">
+    <div class="container">
+     <div class="row">
+      <div class="footer_1 clearfix">
+       <div class="col-sm-3">
+        <div class="footer_1i clearfix">
+          <a class="navbar-brand" href="index.html"><i class="fa fa-university"></i>GVI Technology</a>
+          <p>2nd Floor, Room No-8, BMC Panchadeep Complex, Bhouma Nagar, Unit-IV, Bhubaneswar, Odisha, 751001</p>
+        </div>
+       </div>
+       <div class="col-sm-3">
+        <div class="footer_1i1 clearfix">
+          <h3 class="mgt">Useful Links</h3>
+          <ul>
+           <li><i class="fa fa-circle"></i> <a href="#">Customer Help</a></li>
+           <li><i class="fa fa-circle"></i> <a href="#">Contact Us</a></li>
+           <li><i class="fa fa-circle"></i> <a href="#">Social Sites</a></li>
+           <li><i class="fa fa-circle"></i> <a href="#">About Us</a></li>
+           <li><i class="fa fa-circle"></i> <a href="#">Sports Education</a></li>
+          </ul>
+        </div>
+       </div>
+       <div class="col-sm-3">
+        <div class="footer_1i2 clearfix">
+          <h3 class="mgt">Contact Us</h3>
+          <ul>
+           <li><i class="fa fa-phone"></i> 0674-2393123</li>
+           <li><i class="fa fa-map-marker"></i>  2nd Floor, Room No-8, BMC Panchadeep Complex, Bhouma Nagar, Unit-IV, Bhubaneswar, Odisha,751001</span></li>
+		   <li><i class="fa fa-envelope"></i>info@gvitechnology.com</li>
+          </ul>
+        </div>
+       </div>
+       <div class="col-sm-3">
+        <div class="footer_1i3 clearfix">
+          <h3 class="mgt">Follow Us</h3>
+          <!---<input placeholder="Email" class="form-control" type="text">--->
+          <ul class="social-network social-circle">
+           <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+           <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+           <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+           <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+           <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+       </ul>
+       </div>
+       </div>
+      </div>
+      <div class="footer_2 clearfix">
+        <div class="col-sm-5">
+         <div class="footer_2_l clearfix">
+          <ul>
+           <li><a href="#">Privacy</a></li>
+           <li><a href="#">Our Policy</a></li>
+           <li class="border_none"><a href="#">Term & Condition </a></li>
+          </ul>
+         </div>
+        </div>
+        <div class="col-sm-7">
+         <div class="footer_2_l clearfix">
+           <p style="margin-left: -21px;">© 2022 Online Examination System. All Rights Reserved. Design by<a href="https://gvitechnology.com/"> GVI Technology</a> </p>
+         </div>
+        </div>
+      </div>
+     </div>
+    </div>
+   </section>
+ </body>
+ </html>

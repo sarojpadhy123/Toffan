@@ -1,0 +1,400 @@
+{% extends 'navbar.html' %}
+{% block content %}
+<html>
+
+  	<link href="static/css/forms.css" rel="stylesheet">
+  	<link href="static/css/services.css" rel="stylesheet">
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style media="screen">
+    body{
+      font-family:  sans-serif;
+    }
+    /*********************c_service****************/
+    .c_service_m{
+     background:#000c;
+     padding-top:60px;
+     padding-bottom:290px;
+      }
+    .c_service_1 ul li{
+     display:inline-block;
+     padding-left:10px;
+     padding-right:10px;
+     color:#ccc;
+       }
+    .c_service_1 ul li i{
+      color:#fc0;
+      margin-right:5px;
+      vertical-align:middle;
+      }
+     .c_service_1 ul li a{
+       color:#fff;
+       }
+    .c_service{
+      background-image: url('/static/image/about.png');
+      background-position: initial;
+      height: 260px;
+       }
+    .c_service{
+     margin-top:50px;
+      }
+      /*********************c_service_end****************/
+
+      /*********************layout_start****************/
+      .layout_padding {
+        padding-top: 75px;
+        padding-bottom: 75px;
+      }
+
+      .layout_padding_2 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+      .margin-top_50 {
+        margin-top: 50px;
+      }
+
+      .margin-bottom_30 {
+        margin-bottom: 30px;
+      }
+      .silver_bg {
+        background: #eee;
+      }
+      .blog_img_popular {
+        margin-bottom: 30px;
+    }
+    h4
+    {
+      position: relative;
+    }
+    .blog_img_popular h4 {
+      width: 86%;
+      background: #fff;
+      margin: 0 7%;
+      padding: 0;
+      color: #095a83;
+      text-align: center;
+      font-size: 20px;
+      min-height: 70px;
+      line-height: 70px !important;
+      box-shadow: 0 0 25px 0 rgb(0 0 0 / 20%);
+      margin-top: -35px;
+    }
+    .img-responsive {
+      max-width: 100%;
+    }
+      .text_align_right {
+        text-align: right;
+      }
+
+      .float-right_img img {
+          float: right;
+      }
+      .heading_main p.large {
+        font-size: 20px;
+        color: #605f5f;
+        position: relative;
+        padding: 0;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .heading_main {
+      float: left;
+      display: flex;
+    }
+    .heading_main p {
+        font-family: 'Raleway', sans-serif;
+    }
+    .heading_main h2 {
+      font-size: 40px;
+      font-weight: 700;
+      padding: 0 0 15px 0;
+      margin: 0 0 30px 0;
+      font-family: 'Raleway', sans-serif;
+      position: relative;
+      background-image: url(static/image/heading_main_border.png);
+      background-position: left bottom;
+      background-repeat: no-repeat;
+    }
+
+    .heading_main p.small_tag {
+        color: #000;
+        font-size: 18px;
+        text-transform: uppercase;
+        line-height: normal;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    .heading_main.text_align_center {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .full {
+      float: left;
+      width: 100%;
+    }
+    .float-right_img img {
+      float: right;
+    }
+    .full > img {
+      width: 100%;
+    }
+    img {
+      vertical-align: middle;
+      border-style: none;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    .hvr-radial-out {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(1px) translateZ(0);
+      transform: perspective(1px) translateZ(0);
+      box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+      position: relative;
+      overflow: hidden;
+      background: #095a83;
+      -webkit-transition-property: color;
+      transition-property: color;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      color: #fff;
+      float: left;
+      width: 165px;
+      height: 45px;
+      text-align: center;
+      line-height: 45px;
+      margin-top: 20px;
+      font-size: medium;
+      text-indent: -10px;
+    }
+    a, .btn {
+      text-decoration: none !important;
+      outline: none !important;
+      -webkit-transition: all .3s ease-in-out;
+      -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+      -o-transition: all .3s ease-in-out;
+      transition: all .3s ease-in-out;
+    }
+    .hvr-radial-out:after {
+      content: "";
+      display: flex;
+      width: 25px;
+      height: 100px;
+      background: #fff;
+      position: absolute;
+      z-index: 11;
+      top: 0;
+      right: -6px;
+      transform: skew(-20deg);
+    }
+
+    .hvr-radial-out::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #070500;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    }
+
+    .hvr-radial-out:hover::before,
+    .hvr-radial-out:focus::before,
+    .hvr-radial-out:active::before {
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    }
+
+    a.hvr-radial-out:hover,
+    a.hvr-radial-out:focus {
+    color: #fff;
+    }
+      /*********************layout_start****************/
+      img{
+       margin-top: 10px;
+        }
+      #book
+      {
+        margin-top: -11px;
+      }
+    </style>
+    {% if error == 'no' %}
+    <script>
+       alert('Logged in Successfully');
+       window.location=('{% url 'candidatebase' %}');
+    </script>
+    {% endif %}
+
+    {% if error == 'yes' %}
+    <script>
+       alert('Invalid Logged In, Please try again');
+    </script>
+    {% endif %}
+<body>
+
+<section id="center" class="c_service">
+ <div class="c_service_m clearfix">
+  <div class="container">
+  <div class="row">
+   <div class="col-sm-12">
+    <div class="c_service_1 clearfix">
+	  <ul>
+	   <li><a href="index">Home</a></li>
+	   <li><i class="fa fa-graduation-cap"></i> Candidate</li>
+	  </ul>
+	</div>
+   </div>
+  </div>
+ </div>
+ </div>
+</section>
+
+<section id="proctor_login">
+	<div class="container">
+		<div class="cover">
+		  <div class="front">
+			<img src="static/image/frontImg.jpg" alt="">
+		  <!--  <div class="text">
+			  <span class="text-1">Every new friend is a <br> new adventure</span>
+			  <span class="text-2">Let's get connected</span>
+			</div>---->
+		  </div>
+		</div>
+		<div class="forms">
+			<div class="form-content">
+			  <div class="login-form">
+				<div class="title">Login</div>
+        <form method="post">
+          {% csrf_token %}
+				<div class="input-boxes">
+				  <div class="input-box">
+					<i class="fas fa-envelope"></i>
+					<input type="email" placeholder="Enter your email" name="mailidn" required>
+				  </div>
+				  <div class="input-box">
+					<i class="fas fa-lock"></i>
+					<input type="password" placeholder="Enter your password" name="pass" required>
+				  </div>
+				  <!--<div class="text"><a href="#">Forgot password?</a></div>-->
+
+					<input type="submit" value="Sumbit" class="bg-success">
+
+				  <div class="text sign-up-text">Don't have an account?<a href="registration_candidate"><label>Sigup now</label></a></div>
+				</div>
+			</form>
+		  </div>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="skill_home">
+  <div class="container">
+   <div class="row">
+    <div class="skill_home_1 clearfix">
+     <div class="col-sm-6">
+    <div class="skill_home_1l clearfix">
+     <h3 class="h_bg_1">We Teach Latest Skills </h3>
+     <p>Invigilate for any suspicious activity in online exam with AI based cheating prevention and assertive actions upon intolerable behaviour. Live streaming of test takers with live chat. Automatic capture of candidate’s photos during examination at specified intervals.</p>
+     <p class="bold">Ad litora torquent per conubia nostra, per inceptos himenaeos. Curabitursodales ligula in libero.Sed dignissim lacinia nunc.</p>
+     <ul>
+      <li><a class="button_1" href="#">What We Teach</a></li>
+      <li><a class="button" href="#">How We Teach</a></li>
+     </ul>
+    </div>
+   </div>
+   <div class="col-sm-6">
+    <div class="skill_home_1r text-center clearfix">
+     <p class="para_1 bold"><i class="fa fa-book"></i> Eases examination-related requirements</p>
+     <p class="bold"><i class="fa fa-copy"></i> Trends in Teaching and Assessment</p>
+     <p class="para_1 bold"><i class="fa fa-pencil"></i> Scalable worldwide reach</p>
+     <p class="bold"><i class="fa fa-graduation-cap"></i> Trends in Teaching and Assessment</p>
+     <p class="para_1 bold"><i class="fa fa-inbox"></i> Easy-to-use</p>
+    </div>
+   </div>
+    </div>
+   </div>
+  </div>
+ </section>
+
+<!-- section -->
+<div class="section margin-top_50">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6 layout_padding_2">
+				<div class="full">
+					<div class="heading_main text_align_left">
+					   <h2><span>Welcome To</span> Our Session</h2>
+					</div>
+					<div class="full">
+					  <p>One-stop-destination for Online examination, preparation, recruitment, and more. Specially designed online examination system to solve all your exam preparation.<br><br>
+            Online exams, also known as virtual exams, enables examiners to conduct exams using the internet for remote candidates. In an online examination, candidates are expected to answer the questions on their systems. The test window closes once the exam is over.</p>
+					</div>
+					<div class="full">
+					   <a class="hvr-radial-out button-theme" href="about">About more</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="full">
+					<img src="static/image/pe.png" style="height: 520px;"/>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end section -->
+<!-- section -->
+<div class="section layout_padding">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="full">
+					<div class="heading_main text_align_center">
+					   <h2><span>Attend </span>Exam</h2>
+					</div>
+				  </div>
+			</div>
+			<div class="col-md-4">
+				<div class="full blog_img_popular">
+				   <img class="img-responsive" src="static/image/oxm.jpg" alt="#" style="height: 240px;"/>
+
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="full blog_img_popular">
+					<img class="img-responsive" src="static/image/Overview-of-Online-Exam-Software.jpg" alt="#" style="height: 240px;" />
+
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="full blog_img_popular">
+					<img class="img-responsive" src="static/image/exam2.png" alt="#" />
+
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- end section -->
+
+</body>
+</html>
+{% endblock content %}

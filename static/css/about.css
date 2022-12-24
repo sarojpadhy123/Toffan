@@ -1,0 +1,239 @@
+/*
+Template Name:Teacher
+File: Layout CSS
+Author: Templates On Web
+Author URI: http://templateonweb.com/
+Licence: <a href="http://www.templateonweb.com/terms.php?v=content&contentid=152">Website Template Licence</a>
+*/
+
+/*********************about_page****************/
+#instructor{
+  padding-top:30px;
+  padding-bottom:40px;
+  }
+#instructor .thumbnail{
+ margin-bottom:0;
+  }
+.instr_1r h4{
+margin-bottom:10px;
+  }
+.instr_1r h3 span{
+ color:#fc0;
+  }
+.instr_1r li a {
+  background:#000;
+  }
+.instr_1r1i h5 span{
+  display:block;
+  margin-left:15px;
+  line-height:1.6em;
+  }
+.instr_1r1i h5 i{
+ vertical-align:middle;
+ font-weight:bold;
+  }
+.tutor_l_i {
+  margin-top:10px;
+  border-bottom:2px dashed #ddd;
+  padding-bottom:20px;
+  }
+.tutor{
+ margin-top:20px;
+  }
+.tutor_l_i h4 i{
+ font-size:8px;
+ vertical-align: middle;
+ margin-right: 5px;
+   }
+.tutor_l_i p{
+padding-left:15px;
+padding-right:15px;
+  }
+
+#example_h{
+background:#f4f4f4;
+padding-top:30px;
+padding-bottom:40px;
+  }
+.team_top_1 .h_bg_1{
+  width:30%;
+  }
+.example_h_1l span i{
+  font-size:40px;
+  color:#000;
+  }
+.example_h_1l{
+ border:1px solid #ddd;
+ padding:20px 10px 25px 10px;
+ background:#fff;
+  }
+.example_h_1l hr{
+border-width:3px;
+border-color:#fc0;
+width:15%;
+ }
+.example_h_1{
+ margin-top:20px;
+  }
+
+/*********************about_page_end****************/
+
+/*********************skill_page****************/
+#skill_page{
+ padding-top:30px;
+ padding-bottom:40px;
+ background:#fc0;
+  }
+.skill_page_1 .h_bg{
+width:30%;
+ }
+.skill_page_2i span {
+  width:120px;
+  height:120px;
+  background:#000;
+  color:#fff;
+  border-radius:50%;
+  line-height:120px;
+  font-size:40px;
+  border:3px solid #fff;
+   display:inline-block;
+  }
+.skill_page_2ii span {
+  width:120px;
+  height:120px;
+  background:#fff;
+  color:#000;
+  border-radius:50%;
+  line-height:120px;
+  font-size:40px;
+  border:3px solid #000;
+  display:inline-block;
+  }
+.skill_page_2i hr{
+  border-width:3px;
+  border-color:#000;
+  width:15%;
+  margin-left:0;
+  }
+.skill_page_2{
+ margin-top:20px;
+ border-bottom:2px dashed #333;
+ padding-bottom:25px;
+  }
+/*********************skill_page_end****************/
+
+/*********************faq****************/
+#faq{
+padding-top:30px;
+padding-bottom:30px;
+   }
+.faq_1 .h_bg_1{
+ width:30%;
+  }
+
+.ziehharmonika h3 {
+	background: #000;
+	color: #fc0;
+	text-align: left;
+	border-radius: 4px;
+	padding: 14px 12px;
+	cursor: pointer;
+	margin-top: 0;
+	margin-bottom: 9px;
+	padding-right: 40px;
+	transition: 0.25s all;
+	position: relative;
+}
+.ziehharmonika h3.active {
+	margin-bottom: 21px;
+	background: #fc0;
+	color:#000;
+}
+.ziehharmonika h3::before {
+	content: attr(data-prefix);
+	font-size: 18px;
+	margin-right: 9px;
+}
+.ziehharmonika h3.alignLeft {
+	padding-left: 35px;
+}
+.ziehharmonika > div {
+	display: none;
+	background: #fff;
+	border-radius: 4px;
+	border: 1px solid #cdcdcd;
+	text-align: left;
+	padding: 31px 33px;
+	margin-bottom: 9px;
+}
+.ziehharmonika .arrowDown {
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 13.0px 7.5px 0 7.5px;
+	border-color: #272e35 transparent transparent transparent;
+	position: absolute;
+	bottom: 0;
+	left: 40px;
+	transition: 0.25s all;
+	opacity: 0;
+}
+.ziehharmonika .active .arrowDown {
+	bottom: -13px;
+	border-color: #fc0 transparent transparent transparent;
+	opacity: 1;
+}
+.ziehharmonika .collapseIcon {
+	position: absolute;
+	right: 20px;
+	top: 45%;
+	font-size: 25px;
+	font-weight: 300;
+	-ms-transform: translate(0, -50%);
+	    transform: translate(0, -50%);
+}
+.ziehharmonika .collapseIcon.alignLeft {
+	right: initial;
+	left: 20px;
+}
+.ziehharmonika{
+ margin-top:20px;
+  }
+/*********************faq_end****************/
+
+
+@media screen and (max-width : 767px){
+#instructor{
+ text-align:center;
+  }
+#skill_page{
+ text-align:center;
+  }
+.skill_page_2i hr{
+ margin-left:auto;
+  }
+.skill_page_2ii {
+ margin-top:10px;
+ }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+.skill_page_2i span{
+ width:100px;
+ height:100px;
+ line-height:100px;
+ font-size:30px;
+ }
+.skill_page_2ii span{
+ width:100px;
+ height:100px;
+ line-height:100px;
+ font-size:30px;
+ }
+ }
+ @media (min-width:992px) and (max-width:1200px) {
+
+ }
+@media (min-width:1201px) and (max-width:1310px) {
+
+ }

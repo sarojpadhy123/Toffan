@@ -1,0 +1,54 @@
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+</head>
+{% include 'admin/csectionnavbar.html' %}
+<br><br><br><br><br>
+<body class="bg-dark">
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Pending Existing Candidate List</h6>
+    </div>
+    <table class="table table-hover table-bordered" id="dev-table">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Photo</th>
+          <th>Contact</th>
+          <th>Designation</th>
+          <th>Max. Qualifications</th>
+          <th>Stream</th>
+          <th>ID Proof</th>
+          <th>ID No</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      {% for t in students %}
+      <tr>
+        <td> {{t.get_name}}</td>
+        <td> <img src="" alt="Profile Pic" height="50px" width="50px" /></td>
+        <td>{{t.mobile}}</td>
+        <td>{{t.address}}</td>
+        <td><a class="btn btn-success btn-sm" style="border-radius: 0%;" href="{% url 'approve-student' t.id  %}"><span class="glyphicon glyphicon-ok"></span></a>
+        <a class="btn btn-danger btn-sm" style="border-radius: 0%;" href="{% url 'reject-student' t.id  %}"><span class="	glyphicon glyphicon-remove"></span></a></td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>
+</body>

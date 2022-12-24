@@ -1,0 +1,59 @@
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+    h6 {
+      text-align: center;
+    }
+    .row {
+      margin: 100px;
+    }
+  </style>
+</head>
+{% include 'admin/rsectionnavbar.html' %}
+<body class="bg-dark">
+  <br><br><br><br><br><br><br>
+<script>
+$('#selectAll').click(function(e){
+  var table= $(e.target).closest('table');
+  $('td input:checkbox',table).prop('checked',this.checked);
+});
+</script>
+<div class="container">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h6 class="panel-title">Exam Name</h6>
+    </div>
+    <table class="table table-hover table-bordered" id="dev-table">
+      <thead>
+        <tr>
+          <th>Roll No</th>
+          <th>Candidate Name</th>
+          <th>Marks Secured</th>
+          <th>Total Marks</th>
+          <th><input type="checkbox" id="selectAll" /></th>
+        </tr>
+      </thead>
+      {% for c in questions %}
+      <tr>
+        <td> {{c.question}}</td>
+        <td>{{c.marks}}</td>
+        <td>{{c.option1}}</td>
+        <td>{{c.option2}}</td>
+        <td>{{c.option3}}</td>
+        <td>{{c.option4}}</td>
+        <td>{{c.answer}}</td>
+        <td>
+      <a class="btn btn-success btn-xs" style="border-radius: 0%;" href="{% url 'update-question' c.id  %}"><span class="glyphicon glyphicon-edit"></span></a>
+      <a class="btn btn-danger btn-xs" style="border-radius: 0%;" href="{% url 'delete-question' c.id  %}"><span class="glyphicon glyphicon-trash"></span></a>
+       </td>
+      </tr>
+      {% endfor %}
+    </table>
+  </div>
+</div>

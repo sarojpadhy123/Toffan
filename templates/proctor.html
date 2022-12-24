@@ -1,0 +1,499 @@
+{% extends 'navbar.html' %}
+{% block content %}
+<html>
+
+	<link href="static/css/achieve.css" rel="stylesheet">
+  <link href="static/css/forms.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <style media="screen">
+  body{
+    font-family: sans-serif;
+  }
+  /*********************c_service****************/
+  .c_service_m{
+   background:#000c;
+   padding-top:60px;
+   padding-bottom:290px;
+    }
+  .c_service_1 ul li{
+   display:inline-block;
+   padding-left:10px;
+   padding-right:10px;
+   color:#ccc;
+     }
+  .c_service_1 ul li i{
+    color:#fc0;
+    margin-right:5px;
+    vertical-align:middle;
+    }
+   .c_service_1 ul li a{
+     color:#fff;
+     }
+  .c_service{
+    background-image: url('/static/image/about.png');
+    background-position: initial;
+    height: 260px;
+     }
+  .c_service{
+   margin-top:50px;
+    }
+    /*********************c_service_end****************/
+
+  /*********************layout_start****************/
+  .layout_padding {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .layout_padding_2 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .margin-top_50 {
+    margin-top: 50px;
+  }
+
+  .margin-bottom_30 {
+    margin-bottom: 30px;
+  }
+  .silver_bg {
+    background: #eee;
+  }
+  .blog_img_popular {
+    margin-bottom: 30px;
+}
+h4
+{
+  position: relative;
+}
+.blog_img_popular h4 {
+  width: 86%;
+  background: #fff;
+  margin: 0 7%;
+  padding: 0;
+  color: #095a83;
+  text-align: center;
+  font-size: 20px;
+  min-height: 70px;
+  line-height: 70px !important;
+  box-shadow: 0 0 25px 0 rgb(0 0 0 / 20%);
+  margin-top: -35px;
+}
+.img-responsive {
+	max-width: 100%;
+}
+  .text_align_right {
+    text-align: right;
+  }
+
+  .float-right_img img {
+      float: right;
+  }
+  .heading_main p.large {
+    font-size: 20px;
+    color: #605f5f;
+    position: relative;
+    padding: 0;
+    font-weight: 500;
+    margin: 0;
+}
+
+.heading_main {
+  float: left;
+  display: flex;
+}
+.heading_main p {
+    font-family: 'Raleway', sans-serif;
+}
+.heading_main h2 {
+  font-size: 40px;
+  font-weight: 700;
+  padding: 0 0 15px 0;
+  margin: 0 0 30px 0;
+  font-family: 'Raleway', sans-serif;
+  position: relative;
+  background-image: url(static/image/heading_main_border.png);
+  background-position: left bottom;
+  background-repeat: no-repeat;
+}
+
+.heading_main p.small_tag {
+    color: #000;
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: normal;
+    font-weight: 600;
+    margin: 0;
+}
+
+.heading_main.text_align_center {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.full {
+  float: left;
+  width: 100%;
+}
+.float-right_img img {
+  float: right;
+}
+.full > img {
+  width: 100%;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+* {
+  box-sizing: border-box;
+}
+.hvr-radial-out {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgb(0 0 0 / 0%);
+  position: relative;
+  overflow: hidden;
+  background: #095a83;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  color: #fff;
+  float: left;
+  width: 165px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  margin-top: 20px;
+  font-size: medium;
+  text-indent: -10px;
+}
+a, .btn {
+  text-decoration: none !important;
+  outline: none !important;
+  -webkit-transition: all .3s ease-in-out;
+  -moz-transition: all .3s ease-in-out;
+  -ms-transition: all .3s ease-in-out;
+  -o-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+.hvr-radial-out:after {
+  content: "";
+  display: flex;
+  width: 25px;
+  height: 100px;
+  background: #fff;
+  position: absolute;
+  z-index: 11;
+  top: 0;
+  right: -6px;
+  transform: skew(-20deg);
+}
+
+.hvr-radial-out::before {
+content: "";
+position: absolute;
+z-index: -1;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: #070500;
+border-radius: 100%;
+-webkit-transform: scale(0);
+transform: scale(0);
+-webkit-transition-property: transform;
+transition-property: transform;
+-webkit-transition-duration: 0.3s;
+transition-duration: 0.3s;
+-webkit-transition-timing-function: ease-out;
+transition-timing-function: ease-out;
+}
+
+.hvr-radial-out:hover::before,
+.hvr-radial-out:focus::before,
+.hvr-radial-out:active::before {
+-webkit-transform: scale(2);
+transform: scale(2);
+}
+
+a.hvr-radial-out:hover,
+a.hvr-radial-out:focus {
+color: #fff;
+}
+  /*********************layout_start****************/
+
+  /*********************skill_page****************/
+  #skill_page{
+   padding-top:30px;
+   padding-bottom:15px;
+    }
+  .skill_page_1 .h_bg_1{
+  width: 78%;
+   }
+  .skill_page_2i span i{
+    width:120px;
+    height:120px;
+    background:#000;
+    color:#fff;
+    border-radius:50%;
+    line-height:120px;
+    font-size:40px;
+    border:3px solid #fc0;
+    }
+  .skill_page_2ii span i{
+    width:120px;
+    height:120px;
+    background:#fc0;
+    color:#000;
+    border-radius:50%;
+    line-height:120px;
+    font-size:40px;
+    border:3px solid #000;
+    }
+  .skill_page_2i hr{
+    border-width:3px;
+    border-color:#fc0;
+    width:15%;
+    }
+  .skill_page_2{
+   margin-top:20px;
+   border-bottom:2px dashed #ddd;
+   padding-bottom:25px;
+    }
+  /*********************skill_page_end****************/
+  img{
+   margin-top: 10px;
+    }
+  #book
+  {
+    margin-top: -11px;
+  }
+  </style>
+  {% if error == 'no' %}
+  <script>
+     alert('Logged in Successfully');
+     window.location=('{% url 'proctorbase' %}');
+  </script>
+  {% endif %}
+
+  {% if error == 'yes' %}
+  <script>
+     alert('Invalid Logged In, Please try again');
+  </script>
+  {% endif %}
+<body>
+
+<section id="center" class="c_service">
+ <div class="c_service_m clearfix">
+  <div class="container">
+  <div class="row">
+   <div class="col-sm-12">
+    <div class="c_service_1 clearfix">
+	  <ul>
+	   <li><a href="index">Home</a></li>
+	   <li><i class="fa fa-graduation-cap"></i> Proctor</li>
+	  </ul>
+	</div>
+   </div>
+  </div>
+ </div>
+ </div>
+</section>
+
+<section id="proctor_login">
+	<div class="container">
+		<div class="cover">
+		  <div class="front">
+			<img src="static/image/frontImg.jpg" alt="">
+		  <!--  <div class="text">
+			  <span class="text-1">Every new friend is a <br> new adventure</span>
+			  <span class="text-2">Let's get connected</span>
+			</div>---->
+		  </div>
+		</div>
+		<div class="forms">
+			<div class="form-content">
+			  <div class="login-form">
+				<div class="title">Login</div>
+			  <form method="post">
+          {% csrf_token %}
+				<div class="input-boxes">
+				  <div class="input-box">
+					<i class="fas fa-envelope"></i>
+					<input type="email" name="mailid" placeholder="Enter your email" required>
+				  </div>
+				  <div class="input-box">
+					<i class="fas fa-lock"></i>
+					<input type="password" name="password" placeholder="Enter your password" required>
+				  </div>
+				  <!--<div class="text"><a href="#">Forgot password?</a></div>-->
+					<input type="submit" value="Sumbit" class="bg-success">
+				  <div class="text sign-up-text">Don't have an account?<a href="registration_proctor"><label>Sigup now</label></a></div>
+				</div>
+			</form>
+		  </div>
+		</div>
+	</div>
+</div>
+</section>
+
+<section id="skill_page">
+ <div class="container">
+  <div class="row">
+   <div class="skill_page_1 clearfix">
+     <h2 class="h_bg_1 mgt_l">Role of Online Exams in the Future Education System</h2>
+	 <p class="text-center"></p>
+   </div>
+   <div class="skill_page_2 clearfix">
+    <div class="col-sm-3">
+	 <div class="skill_page_2i text-center">
+	  <span><i class="fa fa-graduation-cap"></i></span>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="skill_page_2i text-center">
+	  <h4 class="bold">ABUNDANCE OF ENTRANCE EXAMINATION APPLICATIONS</h4>
+	  <hr>
+	  <p> Universities every year have to incur costs for screening the received abundant application with written tests.<br><br>
+       Shortlisting facilities to conduct physical tests consumes lots of efforts and making space for exam centres disrupts college life of students.</p>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="skill_page_2ii text-center">
+	  <span><i class="fa fa-book"></i></span>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="skill_page_2i text-center">
+	  <h4 class="bold"> FUSS OF STAFF RECRUITMENT</h4>
+	  <hr>
+	  <p> Arranging invigilators, and conducting an interview, for choosing teachers to assess the pen-paper examination, is another herculean requirement of this assessment pedagogy.</p>
+	 </div>
+	</div>
+   </div>
+   <div class="skill_page_2 border_none clearfix">
+	<div class="col-sm-3">
+	 <div class="skill_page_2i text-center">
+	  <h4 class="bold">REDUCED ADMINISTRATIVE BURDEN</h4>
+	  <hr>
+	  <p>Printing and circulating question papers and organizing logistics to transport completed scripts to makers is a time- consuming and costly process. <br><br>
+      On the other hand, organizing and running exams online reduces the organization’s administrative burden and also saves time and cost.</p>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="skill_page_2i text-center">
+	  <span><i class="fa fa-copy"></i></span>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="skill_page_2i text-center">
+	  <h4 class="bold">EASES THE EXAMINATION RELATED REQUIREMENTS</h4>
+	  <hr>
+	  <p> Conducting exam through a computer network makes it easier for the examining body to manage the tasks involved in organizing exams.
+<br><br>
+Exams papers are created comfortably by either selecting questions or using automated tools once the assessment organization has an approved question bank. </p>
+	 </div>
+	</div>
+	<div class="col-sm-3">
+	 <div class="skill_page_2ii text-center">
+	  <span><i class="fa fa-pencil-square-o"></i></span>
+	 </div>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<!-- section -->
+<div class="section margin-top_50 silver_bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="full float-right_img">
+					<img src="static/image/Overview-of-Online-Exam-Software.jpg" alt="#" style="margin-left: -30px;"/>
+				</div>
+			</div>
+			<div class="col-md-6 layout_padding_2">
+				<div class="full">
+					<div class="heading_main text_align_left">
+					   <h2><span>Overview of Our Web-based Online Exam Software</h2>
+					</div>
+					<div class="full">
+					  <p>Our Online Exam Software that automates the entire examination process for schools, colleges, universities, coaching institutes, employers, cooperates, and certification providers for quick and precise.<br><br>
+
+					 The teachers/administrators can create, schedule, and analyze online exams, quizzes, and recruitment tests at any point in time. An exam administrator has full freedom to create an online exams for practice at any point in time.</p>
+					</div>
+					<div class="full">
+					   <a class="hvr-radial-out button-theme" href="#">See More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end section -->
+<!-- section -->
+<div class="section layout_padding padding_bottom-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="full">
+					<div class="heading_main text_align_left">
+					   <h2><span>Create Exam</span></h2>
+					</div>
+					<div class="full">
+					  <p>Create unlimited tests/exams in different formats with our online exam software. The administrator of online exam software can create a test by selecting the questions from the question bank.<br><br>
+              Once the test is ready, it can be scheduled at a defined date and time to make it active. It is effortless to add/import different types of questions from pdf, word, and excel through the best online exam software.<br><br>
+              Our online exam website supports various exam formats like multiple choices, multiple choices with multiple answers, fill in the blanks, true & false, etc.</p>
+					</div>
+					<div class="full">
+					   <a class="hvr-radial-out button-theme" href="#">See More</a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="full">
+					<img class="img-responsive" src="static/image/createxm.jpg" alt="#" />
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end section -->
+<!-- section -->
+<div class="section margin-top_50 silver_bg">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="full float-right_img">
+					<img src="static/image/analyze.jpg" alt="#" style="margin-left: -30px;"/>
+				</div>
+			</div>
+			<div class="col-md-6 layout_padding_2">
+				<div class="full">
+					<div class="heading_main text_align_left">
+					   <h2><span>Analyze Exams</h2>
+					</div>
+					<div class="full">
+					  <p>Easily view/export different types of reports for the conducted online test or exams and analyze each user/students’ performance.<br><br>
+						Get a detailed analytic for the examination conducted, online test series sold, a student registered, etc.<br><br>
+						Students can compare their performance through various reports like test analysis; the time has taken on each question/topic/section, comparison with topper, question wise solution & explanation, etc.</p>
+					</div>
+					<div class="full">
+					   <a class="hvr-radial-out button-theme" href="#">See More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- end section -->
+<br><br>
+</body>
+</html>
+{% endblock content %}

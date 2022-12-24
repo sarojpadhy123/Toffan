@@ -1,0 +1,210 @@
+{% extends 'navbar.html' %}
+{% block content %}
+<html>
+  <head>
+    <title>Exam</title>
+  </head>
+  	<!--<link href="static/css/admin_login.css" rel="stylesheet">-->
+  <body>
+
+  <style media="screen">
+  #admin_form
+  body {
+    background: #222D32;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  .login-box {
+    margin-top: 75px;
+    height: auto;
+    background: #1A2226;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  }
+
+  .login-key {
+    height: 100px;
+    font-size: 80px;
+    line-height: 100px;
+    background: -webkit-linear-gradient(#27EF9F, #0DB8DE);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .login-title {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 30px;
+    letter-spacing: 2px;
+    margin-top: 15px;
+    font-weight: bold;
+    color: #ECF0F5;
+  }
+
+  .login-form {
+    margin-top: 25px;
+    text-align: left;
+  }
+
+  input[type=text] {
+    background-color: #1A2226;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+    border-top: 0px;
+    border-radius: 0px;
+    outline: 0;
+    margin-bottom: 20px;
+    padding-left: 0px;
+    color: #ECF0F5;
+  }
+
+  input[type=password] {
+    background-color: #1A2226;
+    border: none;
+    border-bottom: 2px solid #0DB8DE;
+    border-top: 0px;
+    border-radius: 0px;
+    outline: 0;
+    padding-left: 0px;
+    margin-bottom: 20px;
+    color: #ECF0F5;
+  }
+
+  .form-group {
+    margin-bottom: 40px;
+    outline: 0px;
+  }
+
+  .form-control:focus {
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-bottom: 2px solid #0DB8DE;
+    outline: 0;
+    background-color: #1A2226;
+    color: #ECF0F5;
+  }
+
+  input:focus {
+    outline: none;
+    box-shadow: 0 0 0;
+  }
+
+  label {
+    margin-bottom: 0px;
+  }
+
+  .form-control-label {
+    font-size: 15px;
+    color: #6C6C6C;
+    font-weight: bold;
+    letter-spacing: 1px;
+  }
+
+  .btn-outline-primary:hover {
+    background-color: #0DB8DE;
+    right: 0px;
+  }
+
+  .login-btm {
+    float: left;
+  }
+
+  .login-button {
+    padding-right: 0px;
+    text-align: right;
+    margin-bottom: 25px;
+  }
+
+  .login-text {
+    text-align: left;
+    padding-left: 0px;
+    color: #A2A4A4;
+  }
+
+  .loginbttm {
+    padding: 0px;
+  }
+/*----------------------------------*/
+  .btn-outline-primary {
+    border-color: #0DB8DE;
+    color: #0DB8DE;
+    border-radius: 0px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    margin-top: -30px;
+  }
+  select{
+    width: 262px;
+    height: 30px;
+  }
+  </style>
+
+{% if error == "no" %}
+<script>
+	/*alert('Logged In Successfully...');*/
+	window.location=('{% url 'resultsectionbase' %}')
+</script>
+{% endif %}
+
+{% if error == "yes" %}
+<script>
+	/*alert('Invalid Login Credentials, Try Again');*/
+</script>
+
+{% endif %}
+<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">--->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <section id="admin_form">
+ <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-2"></div>
+            <div class="col-lg-6 col-md-8 login-box">
+                <div class="col-lg-12 login-key">
+                    <i class="fa fa-key" aria-hidden="true"></i>
+                </div>
+                  <div class="col-lg-12 login-title">
+                    WELCOME <br> TO <br>RESULT SECTION LOGIN
+                  </div>
+                      <div class="col-lg-12 login-form">
+                        <form method="post">
+                          {% csrf_token %}
+                          <!--<div class="form-group" style="text-align: center;">-->
+
+                          <!--<label class="form-control-label">Select Section</label>---->
+                          <!--<select required>
+                          <option selected>Select Section</option>
+                          <option value="0">SuperAdmin</option>
+                          <option value="1">Proctor Section</option>
+                          <option value="2">Candidate Section</option>
+                          <option value="3">Exam Section</option>
+                          <option value="4">Result Section</option>
+                          </select>
+                        </div>--->
+                            <div class="form-group" >
+                                <label class="form-control-label">USER ID</label>
+                                <input type="text" name="uname" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label class="form-control-label">PASSWORD</label>
+                                <input type="password" name="password" class="form-control" i>
+                            </div>
+                                    <button type="submit" class="btn btn-outline-primary float-right">LOGIN</button>
+                                    <!--<a href="adminbase"><input type="url" value="Admin Login" class="m-2 px-3 btn btn-success"></a>
+                                    <a href="proctorsectionbase"><input type="url" value="Proctor Section Login" class="m-2 px-3 btn btn-success"></a>
+                                    <a href="candidatesectionbase"><input type="url" value="Candidate Section Login" class="m-2 px-3 btn btn-success"></a>
+                                    <a href="examsectionbase"><input type="url" value="Exam Section Login" class="m-2 px-3 btn btn-success"></a>
+                                    <a href="resultsectionbase"><input type="url" value="Result Section Login" class="m-2 px-3 btn btn-success"></a>--->
+
+
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <br><br>
+  </body>
+</html>
+{% endblock content %}

@@ -1,0 +1,98 @@
+{% extends 'navbar.html' %}
+{% block content %}
+<html>
+    <head>
+        <title>OES</title>
+        <style>
+          .modal-header, h4, .close {
+            background-color: #5cb85c;
+            color:white !important;
+            text-align: center;
+            font-size: 30px;
+          }
+          .modal-footer {
+            background-color: #f9f9f9;
+          }
+          .button{
+            margin-left: -20px;
+          }
+          </style>
+    </head>
+
+    {% if error == 'no' %}
+    <script>
+       alert('Logged in Successfully');
+       window.location=('{% url 'proctorbase' %}');
+    </script>
+    {% endif %}
+
+    {% if error == 'yes' %}
+    <script>
+       alert('Invalid Logged In, Please try again');
+    </script>
+    {% endif %}
+
+    <body>
+      <br><br>
+  <div class="jumbotron text-dark" >
+
+    <h1 class="display-4 text-center">Hello Proctor,</h1>
+    <p class="lead text-center">and Welcome to Online Examination System</p>
+    <hr class="my-4">
+    <p class="text-center">Select login access into the system</p>
+    <div class="container">
+
+      <!-- Trigger the modal with a button -->
+      <center>
+      <button type="button" class="btn btn-success btn-lg" id="myBtn">Login</button>
+    </center>
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header" style="padding:35px 50px;">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+            </div>
+            <div class="modal-body" style="padding:40px 50px;">
+              <form role="form" method="post">
+                {% csrf_token %}
+                <div class="form-group">
+                  <label><span class="glyphicon glyphicon-user"></span> Username</label>
+                  <input type="email" class="form-control" name="mailid" placeholder="Enter Email">
+                </div>
+                <div class="form-group">
+                  <label><span class="glyphicon glyphicon-eye-open"></span> Password</label>
+                  <input type="password" class="form-control" name="password" placeholder="Enter Password">
+                </div>
+                <center>
+              <!--<a href="proctor_wait_approval"><input type="url" value="Login" class="btn btn-success"></a>--->
+              <!---<a href="proctorbase"><input type="url" value="Signin" class="m-2 px-3 btn btn-success"></a>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span>Login</button></a>--->
+              <input type="submit" value="Login" class="m-2 btn btn-success">
+            </center>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <center>
+              <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button></center>
+              <p>Not registered?<a href="registration_proctor">Sign Up</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<script>
+$(document).ready(function(){
+  $("#myBtn").click(function(){
+    $("#myModal").modal();
+  });
+});
+</script>
+</div>
+
+</body>
+</html>
+{% endblock content %}
